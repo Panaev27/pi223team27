@@ -48,7 +48,7 @@ public class Calc extends HttpServlet {
 			radius_try=0;
 			height_try=0;	
 			}
-			result=2*Math.PI*radius_try*height_try+2*Math.PI*Math.pow(radius_try);
+			result=2*Math.PI*radius_try*height_try+2*Math.PI*Math.pow(radius_try,2);
 			request.setAttribute("result", result);
 		}
 		
