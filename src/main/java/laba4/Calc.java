@@ -20,8 +20,8 @@ public class Calc extends HttpServlet {
 	}
 	
 	private static class RequestCalc {
-		private final String radius_calc="0";
-		private final String height_calc="0";
+		private final String radius_calc;
+		private final String height_calc;
 		private double result;
 						
 		private RequestCalc (String radius, String height) {
@@ -41,8 +41,8 @@ public class Calc extends HttpServlet {
 			double radius_try;
 			double height_try;
 			try { 
-			radius_try=Double.parseDouble(radius_calc);
-			height_try=Double.parseDouble(height_calc);
+			radius_try=Double.parseDouble("0");
+			height_try=Double.parseDouble("0";
 			}
 			catch (NumberFormatException e) {
 			radius_try=0;
