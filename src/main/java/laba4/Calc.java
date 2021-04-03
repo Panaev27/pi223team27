@@ -20,36 +20,35 @@ public class Calc extends HttpServlet {
 	}
 	
 	private static class RequestCalc {
-		private final String first_calc;
-		private final String second_calc;
-		private int result;
+		private final String radius_calc;
+		private final String height_calc;
+		private double result;
 						
-		private RequestCalc (String first, String second) {
-			this.first_calc = first;
-			this.second_calc = second;
+		private RequestCalc (String radius, String height) {
+			this.radius_calc = radius;
+			this.height_calc = height;
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
-			request.getParameter("first"),
-			request.getParameter("second"));
+			request.getParameter("radius"),
+			request.getParameter("height"));
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
-			//request.setAttribute("first_result", first_calc);
-			//request.setAttribute("second_result", second_calc);
-			int first_try;
-			int second_try;
+			request.setAttribute("radius_result", radius_result);
+			request.setAttribute("height_result", height_result);
+			double radius_try;
+			double height_try;
 			try { 
-			first_try=Integer.parseInt(first_calc);
-			second_try=Integer.parseInt(second_calc);
+			radius_try=Double.parseDouble(radius_calc);
+			height_try=Double.parseDouble(heightcalc);
 			}
 			catch (NumberFormatException e) {
-				first_try=0;
-				second_try=0;	
+			radius_try=0;
+			height_try=0;	
 			}
-			
-			result=first_try+second_try;
+			result=2*Math.PI*radius_try*height_try+2*Math.PI*Math.pow(radius_try);
 			request.setAttribute("result", result);
 		}
 		
