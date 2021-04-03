@@ -7,7 +7,7 @@
 <title>Калькулятор - площади поверхности цилиндра</title>
 </head>
 <body>
-<h1>Калькулятор - площади поверхности цилиндра</h1>>
+<h1>Калькулятор площади поверхности цилиндра</h1>>
     <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
         <label for="first">Радиус цилиндра:</label>
         <input type="text" name="first" id="first" value="${radius}">
