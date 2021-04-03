@@ -20,8 +20,8 @@ public class Calc extends HttpServlet {
 	}
 	
 	private static class RequestCalc {
-		private final String radius_calc;
-		private final String height_calc;
+		private final String radius_calc=0;
+		private final String height_calc=0;
 		private double result;
 						
 		private RequestCalc (String radius, String height) {
