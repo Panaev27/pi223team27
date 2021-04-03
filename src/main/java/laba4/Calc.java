@@ -36,8 +36,8 @@ public class Calc extends HttpServlet {
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
-			request.setAttribute("radius_result", radius_result);
-			request.setAttribute("height_result", height_result);
+			request.setAttribute("radius_result", radius_calc);
+			request.setAttribute("height_result", height_calc);
 			double radius_try;
 			double height_try;
 			try { 
