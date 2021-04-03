@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name="Calc", urlPatterns="/JavaCalc") //связывание сервлета с URL
+@WebServlet(name="Calc", urlPatterns="/JavaCalc")
 public class Calc extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -42,7 +42,7 @@ public class Calc extends HttpServlet {
 			double height_try;
 			try { 
 			radius_try=Double.parseDouble(radius_calc);
-			height_try=Double.parseDouble(heightcalc);
+			height_try=Double.parseDouble(height_calc);
 			}
 			catch (NumberFormatException e) {
 			radius_try=0;
