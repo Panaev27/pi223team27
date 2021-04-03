@@ -1,3 +1,3 @@
-Laba4 - IS - Kazantsev - PI222
+Laba4 - IS - PND_team - PI223
 
-[![Build Status](https://travis-ci.com/Kazantsev27/Laba4.svg?branch=master)](https://travis-ci.com/Kazantsev27/Laba4)
+[![Build Status](https://travis-ci.com/Panaev27/pi223team27.svg?branch=master)](https://travis-ci.com/Panaev27/pi223team27)
