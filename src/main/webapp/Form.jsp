@@ -4,15 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Калькулятор - сложение целых чисел</title>
+<title>Калькулятор - площади поверхности цилиндра</title>
 </head>
 <body>
-<h1>Калькулятор - сложение целых чисел</h1>>
+<h1>Калькулятор - площади поверхности цилиндра</h1>>
     <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
-        <label for="first">Первое слагаемое:</label>
-        <input type="text" name="first" id="first" value="${first}">
-        <label for="second">Второе слагаемое: </label>
-        <input type="text" name="second" id="second" value="${second}">
+        <label for="first">Радиус цилиндра:</label>
+        <input type="text" name="first" id="first" value="${radius}">
+        <label for="second">Высота цилиндра: </label>
+        <input type="text" name="second" id="second" value="${height}">
         <input type="submit" name="sign" value="Calculate">
     </form>
     </body>

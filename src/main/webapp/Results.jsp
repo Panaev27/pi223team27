@@ -4,14 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Результат сложения</title>
+<title>Результат вычисления площади поверхности цилиндра/title>
 </head>
 <body>
-<h1>Результат сложения</h1>
+<h1>Результат вычисления площади поверхности цилиндра</h1>
 <h2>Ваши введеные данные:</h2>
-<p><strong>Первое слагаемое:</strong> ${first_result}</p>
-<p><strong>Второе слагаемое:</strong> ${second_result}</p>
-<p><strong>Результат:</strong> ${result}</p>
+<p><strong>Радиус цилиндра:</strong> ${radius_result}</p>
+<p><strong>Высота цилиндра:</strong> ${height_result}</p>
+<p><strong>Площадь:</strong> ${result}</p>
 
 <form action="${pageContext.request.contextPath}/Form.jsp">
     <input type="submit" name="sign" value="Назад">
