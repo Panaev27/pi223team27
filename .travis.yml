@@ -8,6 +8,10 @@ after_script:
 - echo "Script finished"
 after_succes:
 - echo "Build ready"
-- ls -l $TRAVIS_BUILD_DIR/Lab4_PR27/target
 after_failure:
 - echo "Build failure"
+deploy:
+provide: heroku
+api_key:
+  secure: Z4Vl5AX86Qb7JVEqRKfJFBoFrkGZpFsfRHD2Qwt84Tjp+cpTD22y5R5okhhfXnfpN+ggUy1U7PDbt3frhFrj0aQGUTWeOntjtnbzq246xW0rZB8zC1bHrkyNQgK46jhcqFdlVxroEQXMsx5hsI5y1y5jDxxTC9S1cBPcDOup6V6qcYvD5GIegLY11w8fpR4EatrVjWZhEe9gW0UzOxbqE7IPXoUNYrtQ2XIT6uGk+/B8wgkFlpO90kUhgPYJxmCIYBZOsfjDKIN6dmpn6tCVnkBgcX12tAurDAdO7AW+GDb6rkikSAtGJysQagx3PzIZkWVEwVTN4ZZa0+ZplZvA2HtYTyr6nyoAX//qbFSX4Ws9RzrwVNHt/5ke+z99gkgYv2GGItIz56HOKZ7xWL3lCh45n1emmmt1H1/9f9AB1NQXgQCp5aaIV4k0TNRiGUzzZdJrdOotQjZ21rBXdtbg9AuygGX1WXJ2iWYEHUXtQ3ys0PyMWiMon/HrBXjRu+ENmvyvzKDm2u84VqIz4eQGQt/3JBEJ6jJCa5WJVpq9/yzESHJlq68NOW7VNiiaNHVcyMM0vANMwhs2KwnqmBwEyZ/MQXKqVPfqU5mADHVgmTl+BVFHwK0umVLXmzJlb2VwRBYJNVFXUi6M52e6rcX+x+KE1NUEWKchffeVsuUorZc=
+  app: Lab5pi223_27
