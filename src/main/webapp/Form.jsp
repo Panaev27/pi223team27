@@ -9,9 +9,9 @@
 <body>
 <h1>Калькулятор площади поверхности цилиндра</h1>>
     <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
-        <label for="first">Радиус цилиндра, мм:</label>
+        <label for="first">Радиус цилиндра:</label>
         <input type="text" name="radius" id="radius" value="${radius}">
-        <label for="second">Высота цилиндра, мм: </label>
+        <label for="second">Высота цилиндра: </label>
         <input type="text" name="height" id="height" value="${height}">
         <input type="submit" name="sign" value="Calculate">
     </form>
