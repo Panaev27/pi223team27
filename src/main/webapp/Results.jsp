@@ -9,9 +9,9 @@
 <body>
 <h1>Результат вычисления площади поверхности цилиндра</h1>
 <h2>Ваши введеные данные:</h2>
-<p><strong>Радиус цилиндра:</strong> ${radius_result} мм</p>
-<p><strong>Высота цилиндра:</strong> ${height_result} мм</p>
-<p><strong>Площадь:</strong> ${result} мм</p>
+<p><strong>Радиус цилиндра:</strong> ${radius_result}  мм</p>
+<p><strong>Высота цилиндра:</strong> ${height_result}  мм</p>
+<p><strong>Площадь:</strong> ${result}  мм</p>
 
 <form action="${pageContext.request.contextPath}/Form.jsp">
     <input type="submit" name="sign" value="Назад">
